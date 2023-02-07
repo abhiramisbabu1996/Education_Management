@@ -3,8 +3,8 @@
     <data>
         <menuitem id="menu_op_school_config_class_room"
                   name="Class Room Management"
-                  parent="openeducat_core.menu_op_school_config"
-                  sequence="30"/>
+                  parent="openeducat_core.menu_op_school_root"
+                  sequence="29"/>
 
         <menuitem id="menu_op_classroom_sub"
                   name="Class Rooms"
