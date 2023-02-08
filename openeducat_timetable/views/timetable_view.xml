@@ -66,12 +66,16 @@
                             <field name="end_datetime"/>
                             <field name="type"/>
                         </group>
+                            <field name="remarks" string="Remarks" placeholder="Remarks..."/>
+                        <group>
+
+                        </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers"
-                               groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+<!--                    <div class="oe_chatter">-->
+<!--                        <field name="message_follower_ids" widget="mail_followers"-->
+<!--                               groups="base.group_user"/>-->
+<!--                        <field name="message_ids" widget="mail_thread"/>-->
+<!--                    </div>-->
                 </form>
             </field>
         </record>

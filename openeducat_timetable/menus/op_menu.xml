@@ -16,6 +16,7 @@
               id="menu_op_timetable_config"
               sequence="40"
               groups="openeducat_core.group_op_faculty,openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin">
+
         <menuitem id="menu_op_period"  name="Timing"  groups="openeducat_core.group_op_faculty" sequence="10"  action="act_open_op_timing_view"/>
 
         <menuitem id="menu_generate_time_table"
@@ -31,4 +32,33 @@
                   action="act_open_time_table_report_view"/>
     </menuitem>
     </menuitem>
+
+    <menuitem name="Timetable"
+              id="menu_op_timetable1"
+              groups="openeducat_core.group_op_back_office_admin,openeducat_core.group_op_faculty"
+
+              sequence="35" parent="openeducat_core.menu_op_school_root"/>
+    <menuitem name="Timetable"
+              id="menu_op_timetable_2"
+              sequence="39" action="act_open_op_session_view"
+              groups="openeducat_core.group_op_faculty,openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin" parent="menu_op_timetable1"/>
+
+    <menuitem name="Configuration"
+              id="menu_op_timetable_config1"
+              sequence="40"
+              groups="openeducat_core.group_op_faculty,openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin" parent="menu_op_timetable1"/>
+
+    <menuitem id="menu_op_period"  name="Timing"  groups="openeducat_core.group_op_faculty" sequence="10"  action="act_open_op_timing_view" parent="menu_op_timetable_config1"/>
+            <menuitem id="menu_generate_time_table"
+                  name="Generate Timetable"
+                  groups="openeducat_core.group_op_back_office"
+                  sequence="20"
+                  action="act_open_generate_time_table_view" parent="menu_op_timetable_config1"/>
+
+        <menuitem id="menu_generate_time_table_report"
+                  name="Generate Timetable Report"
+                  groups="openeducat_core.group_op_back_office_admin"
+                  sequence="30"
+                  action="act_open_time_table_report_view" parent="menu_op_timetable_config1"/>
+
 </odoo>

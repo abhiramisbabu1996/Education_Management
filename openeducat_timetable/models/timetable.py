@@ -68,6 +68,7 @@ class OpSession(models.Model):
     company_id = fields.Many2one(
         'res.company', string='Company',
         default=lambda self: self.env.user.company_id)
+    remarks = fields.Text(string='Remarks')
 
 
     @api.depends('start_datetime')
